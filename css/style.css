@@ -653,9 +653,9 @@ p {
     visibility: hidden;
 }
 .main-navigation ul li:hover .try {
-    background: none;
+    background: var(--color-one);
     border: 1px solid var(--color-one);
-    color: var(--color-3);
+    color: #fff;
 }
                  /* === Header-part === */
 
@@ -694,9 +694,24 @@ p {
 
 
              /* === Middle-shape-area-part === */
-
+.middle-shape-area {
+  position: relative;
+}
+.shape-1 {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 40%;
+}
+.shape-2 {
+  position: absolute;
+  bottom: -2%;
+  right: -56%;
+  width: 72%;
+  z-index: -1;
+}
 .department-head {
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 .department-single-content {
   padding: 35px;
@@ -718,7 +733,6 @@ p {
 .counter-content {
   margin-right: 60px;
   text-align: left;
-  overflow: hidden;
 }
 .counter-content span{
   font-size: 40px;
@@ -739,6 +753,21 @@ p {
 }
 .video-area {
   padding: 5px;
+  position: relative;
+}
+.video-area span {
+  position: absolute;
+  top: 54%;
+  left: 61%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: var(--color-one);
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50%;
 }
 .video-area img {
   margin-top: 30px;
@@ -784,7 +813,7 @@ p {
 
 /* ========= subfooter-part ========== */
 .subfooter-area {
-  background: #2f4052 ;
+  background: #252c3a ;
 }
 .sub-content-area .sub-head{
   font-size: 14px;
@@ -840,8 +869,9 @@ p {
   background: #fff;
   border: none;
   width: 70%;
-  color: #fff;
+  color: var(--color-4);
   padding: 11px 5px;
+  font-size: 14px;
 }
 .sub-input input:focus {
   border: none;
@@ -860,6 +890,34 @@ p {
   padding: 0px;
   background: var(--color-one);
   text-transform: uppercase;
+}
+.foot-icon {
+  display: flex;
+}
+.foot-icon li {
+  margin:0 7px;
+}
+.foot-icon li a{
+  color: #4a4a4a;
+  font-size: 16px;
+}
+.foot-icon li:hover a i.fa-twitter {
+  color: #1DA1F2;
+}
+.foot-icon li:hover a i.fa-facebook-square {
+  color: #4867AA;
+}
+.foot-icon li:hover a i.fa-linkedin {
+  color: #0077B5;
+}
+.foot-icon li:hover a i.fa-skype {
+  color: #0093D2;
+}
+.foot-icon li:hover a i.fa-pinterest-square {
+  color: #E71A21;
+}
+.foot-icon li:hover a i.fa-apple {
+  color: #666666;
 }
 /* ========= subfooter-part ========== */
 
